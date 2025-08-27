@@ -1,0 +1,55 @@
+name: portfolio_app
+description: A Flutter portfolio app with navigation and projects
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  url_launcher: ^6.3.0
+  syncfusion_flutter_pdfviewer: ^30.2.7
+  path_provider: ^2.1.2
+  open_file: ^3.3.2
+  share_plus: ^11.0.0   # ✅ added for mobile sharing/downloading
+  font_awesome_flutter: ^10.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+  
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.png"
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/profile.jpg
+    - assets/projects/bmi.png
+    - assets/projects/smart.png
+    - assets/projects/quiz.png
+    - assets/projects/bus.png
+    - assets/projects/hospi.png
+    - assets/certificates/sap.png
+    - assets/certificates/python.png
+    - assets/certificates/c.png
+    - assets/certificates/artifical.png
+    - assets/markscard/1sem.png
+    - assets/markscard/2sem.png
+    - assets/markscard/3sem.png
+    - assets/markscard/4sem.png
+    - assets/extraciricular/energy.jpg
+    - assets/resume.png  # ✅ added resume asset
+   
