@@ -50,15 +50,16 @@ const RESOURCES = {"assets/AssetManifest.bin": "31fa7f9b9c7a3247644226100cf13d50
 "canvaskit/skwasm.wasm": "39dd80367a4e71582d234948adc521c0",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "flutter.js": "83d881c1dbb6d6bcd6b42e274605b69c",
-"flutter_bootstrap.js": "2a36d953a854106e163d56f6714c875c",
+"flutter_bootstrap.js": "018d172928a01ed1a0f6eb83d0ff1a1b",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "index.html": "90229cf9187f188ded9e0497702b92b6",
 "/": "90229cf9187f188ded9e0497702b92b6",
-"main.dart.js": "58c429ad6d5ae5167f0d7346cf762ad4",
+"main.dart.js": "530a0bbb72835cc5cb67c8f05f4ce748",
 "manifest.json": "6d1e660cf4b0e3642e0ada9dbce46ad0",
+"ngrok.exe": "335e4ec2e7ed5113068c9e092fbe3d22",
 "version.json": "fb8d4678888024cd5f83d8522bb3a722"};
 // The application shell files that are downloaded before a service worker can
 // start.

@@ -54,6 +54,13 @@ class _PortfolioHomeState extends State<PortfolioHome> {
     ExtraCurricularPage(),
   ];
 
+  void _selectPage(int index) {
+    setState(() {
+      _selectedIndex = index;
+      _showSidebar = false; // close sidebar after selection
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,14 +75,10 @@ class _PortfolioHomeState extends State<PortfolioHome> {
                 child: _showSidebar
                     ? Padding(
                         padding:
-                            const EdgeInsets.only(top: 72), // move below button
+                            const EdgeInsets.only(top: 16), // adjust top
                         child: NavigationRail(
                           selectedIndex: _selectedIndex,
-                          onDestinationSelected: (int index) {
-                            setState(() {
-                              _selectedIndex = index;
-                            });
-                          },
+                          onDestinationSelected: _selectPage,
                           labelType: NavigationRailLabelType.all,
                           backgroundColor: Colors.indigo.shade50,
                           selectedIconTheme: const IconThemeData(
@@ -138,12 +141,11 @@ class _PortfolioHomeState extends State<PortfolioHome> {
             ],
           ),
 
-          // Floating menu button
+          // Floating menu button at bottom-left
           Positioned(
-            top: 16,
+            bottom: 16,
             left: 16,
             child: FloatingActionButton(
-              mini: true,
               backgroundColor: Colors.indigo,
               child: Icon(_showSidebar ? Icons.close : Icons.menu),
               onPressed: () {
@@ -158,7 +160,6 @@ class _PortfolioHomeState extends State<PortfolioHome> {
     );
   }
 }
-
 /// -------------------- Pages --------------------
 
 class HomePage extends StatelessWidget {
